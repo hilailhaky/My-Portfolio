@@ -485,7 +485,7 @@
     position: absolute;
     inset: 0;
     z-index: -2;
-    background-image: url('images/background3.jpeg'), url('images/background1.jpeg');
+    background-image: url('images/back.jpeg'), url('images/background1.jpeg');
     background-size: cover, cover;
     background-position: 54% 34%, 58% 38%;
     background-repeat: no-repeat;
@@ -1631,17 +1631,17 @@
   }
 
   .projects .container::before {
-    background-image: url('images/background3.jpeg');
+    background-image: url('images/background13.jpeg');
     background-position: 50% 34%;
   }
 
   .section.experience > .timeline__wrapper::before {
-    background-image: url('images/background8.jpeg');
+    background-image: url('images/1234.jpeg');
     background-position: 48% 34%;
   }
 
   .certificates .container::before {
-    background-image: url('images/background5.jpeg');
+    background-image: url('images/background12.jpeg');
     background-position: 50% 34%;
   }
 
