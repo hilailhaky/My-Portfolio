@@ -1,11 +1,4 @@
-/* ============================================================
-   PORTFOLIO STYLESHEET — FINAL CLEAN VERSION
-   Black & White Line Waves Full Background
-   ============================================================ */
 
-/* ============================================================
-   1. CSS VARIABLES
-   ============================================================ */
 :root {
   /* Colors */
   --color-primary:       #e2e8f0;
@@ -763,7 +756,6 @@ main,
 
 /* Frame kedua — lebih kecil, pudar */
 .hero__image-ring::after {
-  content: 'Ganti foto: file gambar pada tag img';
   position: absolute;
   left: 18px;
   right: 18px;
@@ -893,6 +885,13 @@ main,
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 16px;
 }
+#skills .skills__category:last-child .skills__category-title {
+  margin-bottom: 0px;
+}
+
+#skills .skills__category:last-child .skills__grid {
+  gap: 0px;
+}
 
 /* Skill card sudah punya background gelap — nama skill cukup diberi kotak tipis */
 .skill-card {
@@ -939,7 +938,7 @@ main,
 .skill-progress__meta {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 12px;
   margin-bottom: 7px;
   color: #ffffff;
@@ -1652,7 +1651,7 @@ main,
 }
 
 .skills .section__title::before {
-  content: '* MY';
+  content: 'MY';
   font-size: clamp(2.1rem, 4vw, 3.2rem);
 }
 
@@ -1913,3 +1912,65 @@ main,
     max-width: none;
   }
 }
+/* Languages center alignment */
+.skills__category .skill-card {
+  text-align: center;
+}
+
+/* Indonesia - Merah Putih */
+.lang-id {
+  color: #ff0000;
+}
+
+.lang-id .skill-progress__track span {
+  background: linear-gradient(90deg, #ff0000, #ffffff);
+  box-shadow: 0 0 14px #ff0000;
+}
+
+/* English - Biru Putih Merah */
+.lang-en {
+  color: #3182ce;
+}
+
+.lang-en .skill-progress__track span {
+  background: linear-gradient(90deg, #012169, #ffffff, #c8102e);
+  box-shadow: 0 0 14px #3182ce;
+}
+/* Languages text center */
+.lang-id .skill-card__name,
+.lang-en .skill-card__name {
+  text-align: center;
+}
+
+/* Hapus aura/glow orange */
+.lang-id.skill-card::before,
+.lang-en.skill-card::before {
+  display: none;
+}
+.lang-id,
+.lang-en {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lang-id .skill-progress,
+.lang-en .skill-progress {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lang-id .skill-progress__meta,
+.lang-en .skill-progress__meta {
+  justify-content: center;
+  width: 100%;
+}
+
+.lang-id .skill-progress__track,
+.lang-en .skill-progress__track {
+  width: 100%;
+}
+  
