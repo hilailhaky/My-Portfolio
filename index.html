@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio - Raden Muhammad Hilail Haky | Web Developer">
+  <title>Raden Muhammad Hilail Haky | Portfolio</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#hero" class="navbar__logo">Portfolio</a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <ul class="navbar__list">
+          <li><a href="#hero" class="navbar__link active">About</a></li>
+          <li><a href="#skills" class="navbar__link">Skills</a></li>
+          <li><a href="#projects" class="navbar__link">Projects</a></li>
+          <li><a href="#experience" class="navbar__link">Experience</a></li>
+          <li><a href="#certificates" class="navbar__link">Certificates</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="bg-seamless" aria-hidden="true"></div>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+      <div id="lineWavesBg" class="line-waves-bg" aria-hidden="true"></div>
+
+      <div class="parallax-scene" id="parallaxScene" aria-hidden="true">
+        <div class="parallax-layer parallax-layer--sky" data-speed="0.05"></div>
+        <div class="parallax-layer parallax-layer--stars" data-speed="0.08">
+          <span class="star" style="--x:8%;--y:12%;--s:2px;--d:0s"></span>
+          <span class="star" style="--x:22%;--y:28%;--s:3px;--d:0.5s"></span>
+          <span class="star" style="--x:45%;--y:8%;--s:2px;--d:1s"></span>
+          <span class="star" style="--x:68%;--y:18%;--s:3px;--d:1.5s"></span>
+          <span class="star" style="--x:85%;--y:35%;--s:2px;--d:0.3s"></span>
+          <span class="star" style="--x:15%;--y:55%;--s:2px;--d:0.8s"></span>
+          <span class="star" style="--x:55%;--y:42%;--s:3px;--d:1.2s"></span>
+          <span class="star" style="--x:78%;--y:62%;--s:2px;--d:0.6s"></span>
+          <span class="star" style="--x:92%;--y:15%;--s:2px;--d:1.8s"></span>
+          <span class="star" style="--x:35%;--y:22%;--s:2px;--d:0.4s"></span>
+          <span class="star" style="--x:62%;--y:48%;--s:2px;--d:1.1s"></span>
+          <span class="star" style="--x:5%;--y:38%;--s:3px;--d:0.9s"></span>
+        </div>
+        <div class="parallax-layer parallax-layer--moon" data-speed="0.12" data-mouse="0.04">
+          <div class="moon"></div>
+        </div>
+        <div class="parallax-layer parallax-layer--cloud parallax-layer--cloud-back" data-speed="0.2" data-mouse="0.06">
+          <div class="cloud cloud--lg"></div>
+          <div class="cloud cloud--md cloud--right"></div>
+        </div>
+        <div class="parallax-layer parallax-layer--mountains parallax-layer--mountains-back" data-speed="0.35">
+          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="var(--parallax-mountain-back)" d="M0,192L48,197.3C96,203,192,213,288,229.3C384,245,480,267,576,250.7C672,235,768,181,864,181.3C960,181,1056,235,1152,234.7C1248,235,1344,181,1392,154.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/>
+          </svg>
+        </div>
+        <div class="parallax-layer parallax-layer--mountains parallax-layer--mountains-mid" data-speed="0.5">
+          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="var(--parallax-mountain-mid)" d="M0,224L60,213.3C120,203,240,181,360,186.7C480,192,600,224,720,213.3C840,203,960,149,1080,138.7C1200,128,1320,160,1380,176L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"/>
+          </svg>
+        </div>
+        <div class="parallax-layer parallax-layer--orbs" data-speed="0.42" data-mouse="0.08">
+          <span class="orb orb--1"></span>
+          <span class="orb orb--2"></span>
+          <span class="orb orb--3"></span>
+        </div>
+        <div class="parallax-layer parallax-layer--mountains parallax-layer--mountains-front" data-speed="0.65">
+          <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="var(--parallax-mountain-front)" d="M0,256L80,245.3C160,235,320,213,480,218.7C640,224,800,256,960,250.7C1120,245,1280,203,1360,181.3L1440,160L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"/>
+          </svg>
+        </div>
+        <div class="parallax-layer parallax-layer--cloud parallax-layer--cloud-front" data-speed="0.78" data-mouse="0.1">
+          <div class="cloud cloud--sm"></div>
+          <div class="cloud cloud--md cloud--left"></div>
+        </div>
+      </div>
+
+      <div class="container hero__content" id="heroContent" data-speed="0.03" data-mouse="0.015">
+        <div class="hero__card">
+          <div class="hero__text">
+            <p class="hero__greeting">Hello, I am</p>
+            <h1 class="hero__name">Raden Muhammad Hilail Haky</h1>
+            <h2 class="hero__role">Aspiring Business Analyst | Frontend Developer | AI & Digital Transformation Enthusiast</h2>
+            <p class="hero__desc">Final-year Information Technology student,
+specializing in Front-End Development and Business Analysis.
+Experienced in building structured and scalable web applications
+using HTML, CSS, JavaScript, and Laravel — with real-world
+experience as a Business Analyst and Frontend Developer
+during an internship at Dinas Komunikasi dan Informatika, where
+I contributed to developing a Smart Attendance System with
+Geolocation and Facial Capture technology.
+
+Passionate about bridging the gap between technical solutions
+and business needs — translating requirements into functional,
+user-centered applications.
+
+Currently exploring opportunities in Frontend Development,
+Business Analysis, or AI-driven projects where I can contribute
+and grow.</p>
+              
+            <div class="hero__social">
+              <a href="https://linkedin.com/in/hilailhaky" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/hilailhaky" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://instagram.com/hilailhaky" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="mailto:hilailhaky015@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+
+            <div class="hero__cta">
+              <a href="#projects" class="btn btn--primary">Projects</a>
+            </div>
+          </div>
+
+          <div class="hero__image-wrapper">
+            <div class="hero__image-ring" tabindex="0" role="button" aria-label="Foto profil interaktif. Ganti file di images/AING.jpg sesuai foto yang diinginkan.">
+              <img src="images/AING.jpg" alt="Foto Profil Raden Muhammad Hilail Haky" class="hero__image">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#skills" class="hero__scroll" aria-label="Scroll ke bawah">
+        <span class="hero__scroll-text">Scroll</span>
+        <span class="hero__scroll-dot"></span>
+      </a>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section__header reveal">
+          
+          <h2 class="section__title">Technical Skill</h2>
+          
+        </div>
+
+        <img src="images/haki-stack.jpeg" alt="Foto Hilail Haky" class="skills__profile-img reveal">
+
+        <div class="skills__category reveal">
+          <h3 class="skills__category-title"><i class="fas fa-laptop-code"></i> Frontend</h3>
+          <div class="skills__grid">
+            <div class="skill-card">
+              <i class="fab fa-html5 skill-card__icon"></i>
+              <span class="skill-card__name">HTML</span>
+              <div class="skill-progress" aria-label="HTML Intermediate">
+                <div class="skill-progress__meta"><span></span><strong>Intermediate</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 80%;"></span></div>
+              </div>  
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-css3-alt skill-card__icon"></i>
+              <span class="skill-card__name">CSS</span>
+              <div class="skill-progress" aria-label="CSS 80%">
+                <div class="skill-progress__meta"><span></span><strong>Intermediate</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 80%;"></span></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-js skill-card__icon"></i>
+              <span class="skill-card__name">JavaScript</span>
+              <div class="skill-progress" aria-label="JavaScript 75%">
+                <div class="skill-progress__meta"><span></span><strong>Intermediate</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 75%;"></span></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-bootstrap skill-card__icon"></i>
+              <span class="skill-card__name">Bootstrap</span>
+              <div class="skill-progress" aria-label="Bootstrap 60%">
+                <div class="skill-progress__meta"><span></span><strong>Intermediate</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 60%;"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category reveal">
+          <h3 class="skills__category-title"><i class="fas fa-server"></i> Backend</h3>
+          <div class="skills__grid">
+            <div class="skill-card">
+              <i class="fab fa-laravel skill-card__icon"></i>
+              <span class="skill-card__name">Laravel</span>
+              <div class="skill-progress" aria-label="Laravel 50%">
+                <div class="skill-progress__meta"><span></span><strong>Beginner</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 50%;"></span></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-php skill-card__icon"></i>
+              <span class="skill-card__name">PHP</span>
+              <div class="skill-progress" aria-label="PHP 45%">
+                <div class="skill-progress__meta"><span></span><strong>Beginner</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 45%;"></span></div>
+              </div>
+            </div>
+            <div class="skill-card">
+              <i class="fab fa-python skill-card__icon"></i>
+              <span class="skill-card__name">Python</span>
+              <div class="skill-progress" aria-label="Python 30%">
+                <div class="skill-progress__meta"><span></span><strong>Beginner</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 30%;"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills__category reveal">
+          <h3 class="skills__category-title"><i class="fas fa-database"></i> Database</h3>
+          <div class="skills__grid">
+            <div class="skill-card">
+              <i class="fas fa-database skill-card__icon"></i>
+              <span class="skill-card__name">MySQL</span>
+              <div class="skill-progress" aria-label="MySQL 75%">
+                <div class="skill-progress__meta"><span></span><strong>Intermediate</strong></div>
+                <div class="skill-progress__track"><span style="--progress: 75%;"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section__header reveal">
+          
+          <h2 class="section__title">Projects</h2>
+          
+        </div>
+
+        <div class="projects__grid">
+
+          <article class="project-card reveal">
+            <div class="project-card__wrapper">
+              <div class="project-card__body">
+                <h3 class="project-card__title">Web Based Inventory Management Information System | GM Leather Store</h3>
+                <p class="project-card__desc">Sistem ini dirancang untuk mendukung manajemen data item, kategori, pemasok, transaksi masuk dan keluar stok, pemantauan stok rendah, manajemen pengguna karyawan, dan laporan inventaris. Sistem ini mencakup akses berbasis peran untuk Operator Admin dan Pengguna Karyawan.</p>
+                <div class="project-card__imgs">
+                  <a href="images/login.jpg" target="_blank"><img src="images/login.jpg" alt="Inventory Screenshot 1"></a>
+                  <a href="images/login2.jpg" target="_blank"><img src="images/login2.jpg" alt="Inventory Screenshot 2"></a>
+                  <a href="images/login3.jpg" target="_blank"><img src="images/login3.jpg" alt="Inventory Screenshot 3"></a>
+                  <a href="images/login4.jpg" target="_blank"><img src="images/login4.jpg" alt="Inventory Screenshot 4"></a>
+                </div>
+                <div class="project-card__tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  <span>Laravel</span><span>PHP</span><span>MySQL</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__wrapper">
+              <div class="project-card__body">
+                <h3 class="project-card__title">Smart Attendance System with Geolocation & Facial Capture | Dinas Komunikasi dan Informatika</h3>
+                <p class="project-card__desc">Merancang sistem manajemen kehadiran cerdas yang mengintegrasikan pelacakan geolokasi dan pengambilan gambar berbasis webcam untuk meningkatkan akurasi dan mencegah kecurangan kehadiran.</p>
+                <div class="project-card__imgs">
+                  <a href="images/magang1.jpg" target="_blank"><img src="images/magang1.jpg" alt="Attendance Screenshot 1"></a>
+                  <a href="images/magang2.jpg" target="_blank"><img src="images/magang2.jpg" alt="Attendance Screenshot 2"></a>
+                  <a href="images/magang3.jpg" target="_blank"><img src="images/magang3.jpg" alt="Attendance Screenshot 3"></a>
+                  <a href="images/magang4.jpg" target="_blank"><img src="images/magang4.jpg" alt="Attendance Screenshot 4"></a>
+                </div>
+                <div class="project-card__tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                  <span>Laravel</span><span>PHP</span><span>MySQL</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__wrapper">
+              <div class="project-card__body">
+                <h3 class="project-card__title">E-Commerce Web Development | Band & Musician Merchandise Retail Platform</h3>
+                <p class="project-card__desc">Merancang dan mengembangkan secara mandiri platform e-commerce front-end untuk penjualan merchandise band dan musisi menggunakan HTML, CSS, dan JavaScript murni.</p>
+                <div class="project-card__imgs">
+                  <a href="images/band1.jpg" target="_blank"><img src="images/band1.jpg" alt="Band Screenshot 1"></a>
+                  <a href="images/band2.jpg" target="_blank"><img src="images/band2.jpg" alt="Band Screenshot 2"></a>
+                  <a href="images/band3.jpg" target="_blank"><img src="images/band3.jpg" alt="Band Screenshot 3"></a>
+                  <a href="images/band4.jpg" target="_blank"><img src="images/band4.jpg" alt="Band Screenshot 4"></a>
+                </div>
+                <div class="project-card__tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section class="section experience" id="experience">
+      <div class="timeline__wrapper">
+
+        <div class="section__header reveal">
+          
+          <h2 class="section__title">Intern Experience</h2>
+          
+        </div>
+
+        <div class="experience_grid">
+
+          <!-- Experience 1: Frontend Developer -->
+          <div class="timeline__content reveal">
+            <div class="timeline__wrapper">
+              <div class="timeline__text">
+                <span class="timeline__period">September 2025 – October 2025</span>
+                <h3 class="timeline__role">Frontend Developer</h3>
+                <h4 class="timeline__company">Dinas Komunikasi dan Informatika</h4>
+                <ul class="timeline__desc">
+                  <li>Membangun antarmuka web yang responsif dan berfokus pada pengguna untuk memastikan kompatibilitas lintas perangkat, aksesibilitas, dan kinerja yang konsisten.</li>
+                  <li>Berkolaborasi dengan tim pengembangan untuk mengintegrasikan antarmuka frontend dengan sistem backend Laravel dan integrasi basis data.</li>
+                  <li>Meningkatkan kegunaan situs web dan pengalaman pengguna dengan menyempurnakan struktur tata letak, alur navigasi, dan responsivitas antarmuka.</li>
+                  <li>Melakukan pengujian dan peningkatan iteratif untuk mempertahankan fungsionalitas situs web, keandalan, dan kinerja sistem.</li>
+                  <li>Berhasil menghadirkan antarmuka web fungsional yang menyederhanakan operasi administratif dan mendukung proses manajemen informasi institusional.</li>
+                </ul>
+              </div>
+              <div class="timeline__imgs">
+                <img src="images/1fe.jpg" alt="SIMA Frontend 1">
+                <img src="images/2fe.jpg" alt="SIMA Frontend 2">
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience 2: Business Analyst -->
+          <div class="timeline__content reveal">
+            <div class="timeline__wrapper">
+              <div class="timeline__text">
+                <span class="timeline__period">September 2025 – October 2025</span>
+                <h3 class="timeline__role">Business Analyst</h3>
+                <h4 class="timeline__company">Dinas Komunikasi dan Informatika</h4>
+                <ul class="timeline__desc">
+                  <li>Bertindak sebagai penghubung utama antara klien dan tim pengembangan situs web selama siklus pengembangan sistem.</li>
+                  <li>Memimpin sesi presentasi proyek dengan mempresentasikan alur kerja sistem, fitur situs web, dan kemajuan pengembangan kepada pemangku kepentingan dan pengguna akhir.</li>
+                  <li>Mengumpulkan dan menerjemahkan persyaratan klien ke dalam tujuan teknis yang jelas untuk mendukung keselarasan antara kebutuhan bisnis dan implementasi teknis.</li>
+                  <li>Mengkoordinasikan kolaborasi antara pemangku kepentingan dan pengembang untuk mendukung komunikasi, pengambilan keputusan, dan pelaksanaan proyek yang efektif.</li>
+                  <li>Berhasil mendukung penyampaian solusi situs web yang selaras dengan persyaratan pengguna, tujuan bisnis, dan kebutuhan institusional.</li>
+                </ul>
+              </div>
+              <img src="images/business.jpg" alt="Foto kegiatan Business Analyst" class="timeline__img">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CERTIFICATES SECTION ========== -->
+    <section class="section certificates" id="certificates">
+      <div class="container">
+        <div class="section__header reveal">
+          <h2 class="section__title">Certificate of Competency</h2>
+        </div>
+
+        <div class="certificates__grid">
+
+          <div class="cert-card reveal" data-full="images/George.jpg" data-link="https://coursera.org/share/045224f7bacd130024e21190b084db28">
+            <img src="images/George.jpg" alt="Introduction to Frontend Development Certificate">
+            <div class="cert-card__overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Lihat Detail Sertifikat</span>
+            </div>
+            <p class="cert-card__title">Introduction to Frontend Development | Meta</p>
+          </div>
+
+          <div class="cert-card reveal" data-full="images/AGENT.jpg" data-link="https://www.credly.com/earner/earned/share/7cde2bad-bcb6-4f56-8dd0-a8cbc89fa20d">
+            <img src="images/AGENT.jpg" alt="Build an Agent Certificate">
+            <div class="cert-card__overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Lihat Detail Sertifikat</span>
+            </div>
+            <p class="cert-card__title">Build an AI Agent | IBM</p>
+          </div>
+
+          <div class="cert-card reveal" data-full="images/Meta.jpg" data-link="https://coursera.org/share/c60201a3c4ec08d8dd35175e2b1b68c5">
+            <img src="images/Meta.jpg" alt="Write Professional Emails in English | Georgia Institute of Technology">
+            <div class="cert-card__overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Lihat Detail Sertifikat</span>
+            </div>
+            <p class="cert-card__title">Write Professional Emails in English | Georgia Institute of Technology</p>
+          </div>
+          <div class="cert-card reveal" data-full="images/hp.jpg" data-link="https://www.life-global.org/certificate/a25bafc0-063d-4d64-845a-b14f71b742c1">
+            <img src="images/hp.jpg" alt="AI for Beginners">
+            <div class="cert-card__overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Lihat Detail Sertifikat</span>
+            </div>
+            <p class="cert-card__title">AI for Beginners | HP LIFE</p>
+          </div>
+          <div class="cert-card reveal" data-full="images/Dicoding.jpg" data-link="https://dicoding.com/certificates/81P2OKOOJZOY">
+            <img src="images/Dicoding.jpg" alt="Memulai Pemrograman dengan Python | Dicoding Indonesia">
+            <div class="cert-card__overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Lihat Detail Sertifikat</span>
+            </div>
+            <p class="cert-card__title">Memulai Pemrograman dengan Python | Dicoding Indonesia</p>
+          </div>
+          <div class="cert-card reveal" data-full="images/purwadika.jpg" data-link=" https://purwadhika.com/verify-certificate/PWDK-ITFSWDFC-260423-0000003">
+            <img src="images/purwadika.jpg" alt="Intro to Full Stack Web Development | Purwadhika Digital Technology School">
+            <div class="cert-card__overlay">
+              <i class="fas fa-search-plus"></i>
+              <span>Lihat Detail Sertifikat</span>
+            </div>
+            <p class="cert-card__title">Intro to Full Stack Web Development | Purwadhika Digital Technology School</p>
+          </div>
+          </div>
+          
+
+
+
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__social">
+        <p>Here's my social media, feel free to contact me if you interested and Thank u!</p>
+        <a href="https://linkedin.com/in/hilailhaky" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/hilailhaky" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/hilailhaky" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:hilailhaky015@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== CERTIFICATE LIGHTBOX MODAL ========== -->
+  <div class="modal" id="certModal" aria-hidden="true">
+    <div class="modal__backdrop" id="modalBackdrop"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="modalClose" aria-label="Tutup modal">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="" alt="Certificate Preview" class="modal__image" id="modalImage">
+      <a href="#" class="btn btn--primary modal__link" id="modalLink" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-external-link-alt"></i> Buka Sertifikat Asli | CREDENTIAL ID
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module">
+    import { initLineWaves } from './lineWaves.js?v=5';
+    initLineWaves('#lineWavesBg', {
+      speed: 0.3,
+      innerLineCount: 32,
+      outerLineCount: 36,
+      warpIntensity: 1,
+      rotation: -45,
+      edgeFadeWidth: 0,
+      colorCycleSpeed: 0.1,
+      brightness: 0.58,
+      color1: '#ffffff',
+      color2: '#d8dee8',
+      color3: '#aeb6c2',
+      enableMouseInteraction: true,
+      mouseInfluence: 2
+    });
+  </script>
+
+</body>
+</html>
