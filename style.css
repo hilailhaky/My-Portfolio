@@ -765,8 +765,8 @@
   /* Foto profil: bentuk asimetris — tidak bulat, tidak kotak biasa */
   .hero__image-ring {
     position: relative;
-    width: clamp(260px, 31vw, 380px);
-    height: clamp(330px, 40vw, 480px);
+    width: clamp(230px, 27vw, 330px);
+    height: clamp(295px, 34vw, 410px);
     padding: 0;
     background: none;
     box-shadow: 0 24px 70px rgba(0, 0, 0, 0.48);
@@ -782,7 +782,7 @@
   .hero__image-ring::before {
     content: '';
     position: absolute;
-    inset: 18px -18px -18px 18px;
+    inset: 14px -14px -14px 14px;
     border: 1px solid rgba(255, 255, 255, 0.28);
     border-radius: 0;
     transform: translateZ(-16px);
@@ -830,7 +830,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center center;
+    object-position: 28% 68%;
     /* Bentuk organik asimetris — bukan bulat, bukan kotak */
     border-radius: 0;
     border: none;
@@ -1480,8 +1480,8 @@
     .hero__social, .hero__cta { justify-content: center; }
     .hero__image-wrapper { order: -1; }
     .hero__image-ring {
-      width: min(78vw, 340px);
-      height: min(96vw, 430px);
+      width: min(72vw, 300px);
+      height: min(88vw, 380px);
     }
     .hero__scroll { display: none; }
 
@@ -1541,8 +1541,8 @@
 
     .hero__desc { font-size: 0.96rem; line-height: 1.78; }
     .hero__image-ring {
-      width: min(78vw, 292px);
-      height: min(98vw, 370px);
+      width: min(70vw, 260px);
+      height: min(86vw, 330px);
     }
 
     .hero__cta { flex-direction: column; width: 100%; }
